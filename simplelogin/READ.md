@@ -21,7 +21,7 @@ Installation
 
 To run this project, follow these steps:
 
-1. Clone the repository using `git clone (link unavailable)
+1. Clone the repository using `git clone https://github.com/Amoah-Abankwa
 2. Install the dependencies using npm install
 3. Run the application using ng serve
 4. Open your browser and navigate to http://localhost:4200
@@ -33,10 +33,6 @@ To use this application, simply log in with your credentials. If you don't have 
 Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 Author
 
