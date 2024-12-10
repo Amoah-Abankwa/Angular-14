@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="login.component.css">
+
+<div class="signup-container">
+  <h1>Sign Up</h1>
+  <p>Do you already have account?<strong><a href="login.component.html"> Log In</a></strong> for free.</p>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input formControlName="name" type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input formControlName="email" type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input formControlName="password" type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password</label>
+      <input formControlName="confirm-password" type="password" id="confirm-password" name="password" required>
+    </div>
+	
+	<div class="form-group">
+      <label for="terms"><input formControlName="terms" type="checkbox" id="terms" required>i agree with <a href="#">terms and conditions</a></label>
+      
+    </div>
+	
+    <button type="submit" [disabled]="!signupForm.valid">Sign Up</button>
+  </form>
+</div>
